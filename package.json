@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "twit": "^2.2.11"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "paramounttwitterfeed",
+  "description": "An app for Paramount TV Studios",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JennHerrarte/ParamountTwitterFeed.git"
+  },
+  "author": "Jennifer Herrarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JennHerrarte/ParamountTwitterFeed/issues"
+  },
+  "homepage": "https://github.com/JennHerrarte/ParamountTwitterFeed#readme"
+}
