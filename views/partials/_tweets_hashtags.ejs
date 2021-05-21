@@ -1,4 +1,16 @@
+
+
+
+
+
+
+
 <div class="container">
+
+  <% if (myTweets.statuses.length === 0 ) { %>
+    <p>No Tweets, check back later!</p>
+  <% } %> 
+
     <% myTweets.statuses.forEach( tweets => { %>
 
      <div class="card" style="width: 18rem;">
@@ -10,8 +22,6 @@
        </div>
      </div>
     
-    
- 
    <% }) %>
  </div>
 
@@ -19,12 +29,11 @@
 
  <div class="container">
     <% myTweets.statuses.forEach( status => { %>
+
         <% status.entities.hashtags.forEach( hashtag => { %>
      <div class="card" style="width: 18rem;">
-    
        <div class="card-body">
          <h5 class="card-title"><%= hashtag.text %></h5>
-        
       
        </div>
      </div>
@@ -33,3 +42,8 @@
  
    <% }) %>
  </div>
+
+
+
+
+

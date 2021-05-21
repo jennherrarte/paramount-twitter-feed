@@ -16,7 +16,7 @@ const homePage = async (req, res) => {
 
 const alaska = async (req, res) => {
     T.get('search/tweets', {
-        q: 'Looking for Alaska',
+        q: 'Looking for Alaska since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -28,7 +28,7 @@ const alaska = async (req, res) => {
 
 const alienist = async (req, res) => {
     T.get('search/tweets', {
-        q: 'The Alienist OR Angel of Darkness',
+        q: 'The Alienist OR Angel of Darkness since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -40,7 +40,7 @@ const alienist = async (req, res) => {
 
 const madeforlove = (req, res) => {
     T.get('search/tweets', {
-        q: 'Made For Love OR Cristin Milioti',
+        q: 'Made For Love OR Cristin Milioti since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -52,7 +52,7 @@ const madeforlove = (req, res) => {
 
 const blymanor = async (req, res) => {
     T.get('search/tweets', {
-        q: 'The Haunting of Bly Manor OR The Haunting of Hill House',
+        q: 'The Haunting of Bly Manor OR The Haunting of Hill House since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -68,7 +68,7 @@ const blymanor = async (req, res) => {
 
 const homeBeforeDark = async (req, res) => {
     T.get('search/tweets', {
-        q: 'Home Before Dark',
+        q: 'Home Before Dark since:2020-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -80,7 +80,7 @@ const homeBeforeDark = async (req, res) => {
 
 const defendingJacob = async (req, res) => {
     T.get('search/tweets', {
-        q: 'Defending Jacob OR Chris Evans',
+        q: 'Defending Jacob OR Chris Evans since:2020-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -92,7 +92,7 @@ const defendingJacob = async (req, res) => {
 
 const jackRyan = async (req, res) => {
     T.get('search/tweets', {
-        q: 'Jack Ryan OR John Krasinski',
+        q: 'Jack Ryan OR John Krasinski since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -104,11 +104,12 @@ const jackRyan = async (req, res) => {
 
 const pTVS = async (req, res) => {
     T.get('search/tweets', {
-        q: 'Paramount Television Studios',
+        q: 'Paramount Television Studios since:2019-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
         const myTweets = data
+        console.log(myTweets)
         res.render('shows/studios', {myTweets: myTweets})
         
     })
@@ -116,7 +117,7 @@ const pTVS = async (req, res) => {
 
 const reasonsWhy = async (req, res) => {
     T.get('search/tweets', {
-        q: '13 Reasons Why',
+        q: '13 Reasons Why since:2020-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
