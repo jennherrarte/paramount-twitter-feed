@@ -17,8 +17,14 @@
     
        <div class="card-body">
          <h5 class="card-title"><%= tweets.text %></h5>
+         <h5 class="card-title"><%= tweets.id %></h5>
+         <h5 class="card-title"><%= tweets.user.screen_name %></h5>
         
+         <a class="nav-link active" target="_blank" href="https://twitter.com/<%= tweets.user.screen_name %>/status/<%= tweets.id_str %>"><%= tweets.text %></a>
       
+         
+        
+
        </div>
      </div>
     
@@ -34,6 +40,7 @@
      <div class="card" style="width: 18rem;">
        <div class="card-body">
          <h5 class="card-title"><%= hashtag.text %></h5>
+         
       
        </div>
      </div>
