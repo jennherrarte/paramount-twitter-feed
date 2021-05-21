@@ -16,12 +16,12 @@ const T = new twit({
 
 
 
-
+app.use('/public/', express.static('./public/'))
 app.set('view engine', 'ejs')
 
 app.use( express.urlencoded({ extended: true }) );
 
-app.use(express.static('public'))
+
 
 // app.get('/', (req, res) => {
 //     res.send('Hello World!')
