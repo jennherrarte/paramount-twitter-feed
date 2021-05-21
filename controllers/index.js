@@ -15,17 +15,18 @@ const homePage = async (req, res) => {
 
 }
 
-const madeforlove = async (req, res) => {
+const madeforlove = (req, res) => {
     T.get('search/tweets', {
-        q: 'Made for Love OR Cristin Milioti',
+        q: 'Made For Love OR Cristin Milioti',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
-        res.json(data);
-        
+         const myTweets = data
+        res.render('homepage', {myTweets: myTweets})
+
     })
-    console.log('made for love tweets')
 }
+
 
 const blymanor = async (req, res) => {
     T.get('search/tweets', {
