@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+    <meta charset="UTF-8">
+
+    <title>Paramount Television Studios</title>
+    <hr style="margin-top: 0px; border-color:black">
+ 
+    <div class="top-container">
+    <h1>This is the ptvs page!</h1>
+
+    <div class="container">
+        <% myTweets.statuses.forEach( tweets => { %>
+
+         <div class="card" style="width: 18rem;">
+        
+           <div class="card-body">
+             <h5 class="card-title"><%= tweets.text %></h5>
+            
+          
+           </div>
+         </div>
+        
+        
+     
+       <% }) %>
+     </div>
+
+
+   
+     <div class="container">
+        <% myTweets.statuses.forEach( status => { %>
+            <% status.entities.hashtags.forEach( hashtag => { %>
+         <div class="card" style="width: 18rem;">
+        
+           <div class="card-body">
+             <h5 class="card-title"><%= hashtag.text %></h5>
+            
+          
+           </div>
+         </div>
+         <% }) %>
+        
+     
+       <% }) %>
+     </div>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
