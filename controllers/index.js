@@ -22,7 +22,7 @@ const madeforlove = (req, res) => {
         , count: 100,
     }, function (err, data, response) {
          const myTweets = data
-        res.render('homepage', {myTweets: myTweets})
+        res.render('shows/love', {myTweets: myTweets})
 
     })
 }
