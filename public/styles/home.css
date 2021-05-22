@@ -1,6 +1,41 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -105%; }
+  35% { left: -105%; }
+  45% { left: -210%; }
+  55% { left: -315%; }
+  /* 75% { left: -420%; } */ */
+  /* 95% { left: -105%; }
+  100% { left: -105%; } */ */ */ */
+  }
+  
+  body {
+     margin: 0; 
+     color: #272727;
+     font-family: 'Quicksand', serif;
+     font-style: normal;
+     font-weight: 400;
+     letter-spacing: 0;
+     
+  } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 700px; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+  
+
+
 /* Design */
 *,
 *::before,
@@ -12,13 +47,6 @@ html {
   background-color: #ecf9ff;
 }
 
-body {
-  color: #272727;
-  font-family: 'Quicksand', serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-}
 
 .main{
   max-width: 1200px;
