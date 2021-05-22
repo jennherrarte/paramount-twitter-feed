@@ -36,8 +36,19 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
 .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+  }
+
+.btn a {
   color: #ffffff;
   padding: 0.8rem;
   font-size: 14px;
@@ -51,7 +62,7 @@ img {
   background: transparent;
 }
 
-.btn:hover {
+.btn a :hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
