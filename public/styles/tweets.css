@@ -1,0 +1,22 @@
+.tweet_link {
+    text-decoration: none;
+    color: black;
+}
+
+.tweet_container {
+overflow:scroll;
+height: 700px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+}
+
+.hashtag_container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+
+}

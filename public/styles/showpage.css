@@ -1,0 +1,21 @@
+
+
+.biocontainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.showbox {
+  display: flex;
+    flex-direction: column;
+   
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.showimage {
+    width: 50px
+}
