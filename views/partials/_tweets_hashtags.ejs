@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../../public/styles/tweets.css">
 
 <div id="twitter_container">
-  <h1 class="subtitle">TWEETS</h1>
+    <h1 class="subtitle">Tweets <img class="twitterlogo" src="../../public/images/showpage/twitterlogo.png" alt></h1>
 <div class="tweet_container">
   <% if (myTweets.statuses.length === 0 ) { %>
     <p>No Tweets, check back later!</p>
@@ -13,14 +13,14 @@
      <div class="card" style="width: 50rem;">
        <div class="card-body">
          <a class="tweet_link" target="_blank" href="https://twitter.com/<%= tweets.user.screen_name %>/status/<%= tweets.id_str %>"><%= tweets.text %></a>
-         <p class="usernames">@<%= tweets.user.screen_name %></p>
+         <p class="usernames">Tweeted by @<%= tweets.user.screen_name %></p>
        </div>
      </div>
    <% }) %>
 </div>
 
 <div class="hashtag_container">
-  <h1 class="subtitle">HASHTAGS</h1>
+  <h1 class="subtitle">Hashtags <img class="twitterlogo" src="../../public/images/showpage/twitterlogo.png" alt></h1>
   <div class="card" style="width: 50rem;">
     <div class="hashtags_card-body">
       <% myTweets.statuses.forEach( status => { %>
