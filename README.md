@@ -26,6 +26,8 @@ If something is not behaving intuitively, it is a bug and should be reported. Re
 Help me fix the problem as quickly as possible by following Mozilla's guidelines for reporting bugs.
 ***
 # Screenshots 
+![Paramount-Television-Studios-1](https://user-images.githubusercontent.com/36706323/119277936-3a92e400-bbd7-11eb-8d15-5135fcdcb152.png)
+![Paramount-Television-Studios-2](https://user-images.githubusercontent.com/36706323/119277938-4088c500-bbd7-11eb-8eba-63ff697363ef.png)
 
 ***
 # ☕ Stuff that needs work
