@@ -6,7 +6,6 @@ router.get('/', function(req, res) {
     res.redirect('/home')
     })
 
-
 router.get('/home', homeCtrl.homePage)
 router.get('/tweets/madeforlove', homeCtrl.madeforlove)
 router.get('/tweets/thehaunting', homeCtrl.blymanor)

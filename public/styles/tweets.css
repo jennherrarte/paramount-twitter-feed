@@ -9,14 +9,42 @@ height: 700px;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
+margin-right: 30px;
+
+
 
 }
 
 .hashtag_container {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: auto;
 
+    flex-direction: column;
+
+    margin-bottom: 50px;
+    margin-right: 20px;
+    
+    margin-top: 10px;
+}
+
+.hashtags_card-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 5px;
+   
+
+}
+
+.hashtags_card-text {
+ 
+    padding-left: 20px;
+    padding-right: 20px;
+   
+
+
+}
+
+#twitter_container {
+    margin-top: 30px;
+ 
 }

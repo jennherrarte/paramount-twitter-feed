@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  
-    <meta charset="UTF-8">
-
-    <title>Paramount Television Studios</title>
-    <hr style="margin-top: 0px; border-color:black">
-    <h1>Jack Ryan</h1>
-    <%- include('../partials/_nav_bar') %>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=JackRyan&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-    <div class="top-container">
-    <h1>This is the jack ryan page!</h1>
-
-
-
-
-
-</head>
-<body>
-  <%- include('../partials/_tweets_hashtags') %>
-
-  <p>After tracking a suspicious shipment in the Venezuelan jungle, Jack Ryan heads to South America to investigate. As Jack threatens to uncover a far-reaching conspiracy, the President of Venezuela launches a counter-attack that hits home, leading Jack on a mission spanning the US, UK, Russia, and Venezuela to unravel the President's plot and bring stability to a country on the brink of chaos.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Paramount Television Studios</title>
+        <%- include('../partials/_nav_bar') %>
+        <link rel="stylesheet" href="../../public/styles/showpage.css">
+    </head>
+    <body>
+        <div class="biocontainer">
+        <%- include('../partials/_tweets_hashtags') %>
+            <div class="showbox">
+                <h1>Tom Clancy's Jack Ryan</h1>
+                <h3>Join the conversation</h3>
+                <div container="socials">
+                  <a href="https://twitter.com/intent/tweet?button_hashtag=JackRyan&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <img class="showimage" src="../../public/images/showpage/JRSHOW.jpeg" alt>
+                <p class="showbio">After tracking a suspicious shipment in the Venezuelan jungle, Jack Ryan heads to South America to investigate. As Jack threatens to uncover a far-reaching conspiracy, the President of Venezuela launches a counter-attack that hits home, leading Jack on a mission spanning the US, UK, Russia, and Venezuela to unravel the President's plot and bring stability to a country on the brink of chaos.</p>
+            </div>
+        </div>
+    </body>
 </html>

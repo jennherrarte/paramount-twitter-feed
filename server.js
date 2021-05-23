@@ -13,22 +13,11 @@ const T = new twit({
     timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests. 
 })
 
-
-
-
-app.use('/public/', express.static('./public/'))
 app.set('view engine', 'ejs')
 
+app.use('/public/', express.static('./public/'))
 app.use( express.urlencoded({ extended: true }) );
-
-
-
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-//   })
-
 app.use('/', indexRouter)
-
 
   app.get('/tweets/:search', function (req, res) {
     T.get('search/tweets', {
@@ -39,9 +28,6 @@ app.use('/', indexRouter)
         
     })
 })
-
-
-
 
 app.listen(process.env.PORT || 5000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);

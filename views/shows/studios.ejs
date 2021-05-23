@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  
-    <meta charset="UTF-8">
-
-    <title>Paramount Television Studios</title>
-    <hr style="margin-top: 0px; border-color:black">
- 
-    <div class="top-container">
-      <h1>Paramount Television Studios</h1>
-      <%- include('../partials/_nav_bar') %>
-
-    <a href="https://twitter.com/intent/tweet?button_hashtag=ParamountTelevisionStudios&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-</head>
-<body>
-  <%- include('../partials/_tweets_hashtags') %>
-
-  <p>Paramount Television Studios is an American television production and distribution company, that is a division of Paramount Pictures, a subsidiary of ViacomCBS.</p>
-</body>
-</html>           
+    <head>
+        <meta charset="UTF-8">
+        <title>Paramount Television Studios</title>
+        <%- include('../partials/_nav_bar') %>
+        <link rel="stylesheet" href="../../public/styles/showpage.css">
+    </head>
+    <body>
+        <div class="biocontainer">
+        <%- include('../partials/_tweets_hashtags') %>
+            <div class="showbox">
+                <h1>Paramount Television Studios</h1>
+                <h3>Join the conversation</h3>
+                <div container="socials">
+                  <a href="https://twitter.com/intent/tweet?button_hashtag=ParamountTelevisionStudios&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <img class="showimage" src="../../public/images/showpage/PTVSSHOW.jpeg" alt>
+                <p class="showbio">Paramount Television Studios is an American television production and distribution company, that is a division of Paramount Pictures, a subsidiary of ViacomCBS.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,4 +1,3 @@
-const express = require('express')
 const twit = require('twit');
 const T = new twit({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -7,7 +6,6 @@ const T = new twit({
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
     timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests. 
 })
-
 
 const homePage = async (req, res) => {
     res.render('homepage')
@@ -38,6 +36,18 @@ const alienist = async (req, res) => {
     })
 }
 
+const defendingJacob = async (req, res) => {
+    T.get('search/tweets', {
+        q: 'Defending Jacob OR Chris Evans since:2020-01-01',
+        lang: 'en'
+        , count: 100,
+    }, function (err, data, response) {
+        const myTweets = data
+        res.render('shows/jacob', {myTweets: myTweets})
+        
+    })
+}
+
 const madeforlove = (req, res) => {
     T.get('search/tweets', {
         q: 'Made For Love OR Cristin Milioti since:2019-01-01',
@@ -62,10 +72,6 @@ const blymanor = async (req, res) => {
     })
 }
 
-
-
-
-
 const homeBeforeDark = async (req, res) => {
     T.get('search/tweets', {
         q: 'Home Before Dark since:2020-01-01',
@@ -74,18 +80,6 @@ const homeBeforeDark = async (req, res) => {
     }, function (err, data, response) {
         const myTweets = data
         res.render('shows/dark', {myTweets: myTweets})
-        
-    })
-}
-
-const defendingJacob = async (req, res) => {
-    T.get('search/tweets', {
-        q: 'Defending Jacob OR Chris Evans since:2020-01-01',
-        lang: 'en'
-        , count: 100,
-    }, function (err, data, response) {
-        const myTweets = data
-        res.render('shows/jacob', {myTweets: myTweets})
         
     })
 }
@@ -109,7 +103,6 @@ const pTVS = async (req, res) => {
         , count: 100,
     }, function (err, data, response) {
         const myTweets = data
-        console.log(myTweets)
         res.render('shows/studios', {myTweets: myTweets})
         
     })
@@ -126,7 +119,6 @@ const reasonsWhy = async (req, res) => {
         
     })
 }
-
 
 module.exports = {
     homePage,

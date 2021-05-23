@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  
-    <meta charset="UTF-8">
-
-    <title>Paramount Television Studios</title>
-    <%- include('../partials/_nav_bar') %>
- 
-    <div class="top-container">
-      <h1>Home Before Dark</h1>
-    
-    <a href="https://twitter.com/intent/tweet?button_hashtag=HomeBeforeDark&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-</head>
-<body>
-  <%- include('../partials/_tweets_hashtags') %>
-
-  <p>“Home Before Dark” is a dramatic mystery series inspired by the reporting of a young investigative journalist, Hilde Lysiak. Directed and executive produced by Jon M. Chu, the series follows a young girl named Hilde (played by Brooklynn Prince) who moves from the city of Brooklyn to the small lakeside town her father left behind. While there, her dogged pursuit of the truth leads her to unearth a cold case that everyone in town, including her own father, tried hard to bury.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Paramount Television Studios</title>
+        <%- include('../partials/_nav_bar') %>
+        <link rel="stylesheet" href="../../public/styles/showpage.css">
+    </head>
+    <body>
+        <div class="biocontainer">
+        <%- include('../partials/_tweets_hashtags') %>
+            <div class="showbox">
+                <h1>Home Before Dark</h1>
+                <h3>Join the conversation</h3>
+                <div container="socials">
+                  <a href="https://twitter.com/intent/tweet?button_hashtag=HomeBeforeDark&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <img class="showimage" src="../../public/images/showpage/HBDSHOW.jpg" alt>
+                <p class="showbio">“Home Before Dark” is a dramatic mystery series inspired by the reporting of a young investigative journalist, Hilde Lysiak. Directed and executive produced by Jon M. Chu, the series follows a young girl named Hilde (played by Brooklynn Prince) who moves from the city of Brooklyn to the small lakeside town her father left behind. While there, her dogged pursuit of the truth leads her to unearth a cold case that everyone in town, including her own father, tried hard to bury.</p>
+            </div>
+        </div>
+    </body>
 </html>
+
