@@ -48,3 +48,43 @@ margin-right: 30px;
     margin-top: 30px;
  
 }
+
+.message {
+    padding-left: 10px;
+}
+
+@media (max-device-width: 375px) and (max-device-width : 812px) {
+ 
+.card {
+    width: 17rem !important;
+
+  
+ 
+}
+
+#twitter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+
+.hashtag_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.tweet_container {
+    margin: 0
+}
+     }
+
+
+

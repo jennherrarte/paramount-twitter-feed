@@ -3,7 +3,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <link rel="stylesheet" href="../../public/styles/tweets.css">
 
-
 <div id="twitter_container">
   <h1>TWEETS</h1>
 <div class="tweet_container">
@@ -20,8 +19,6 @@
    <% }) %>
 </div>
 
-
-
 <div class="hashtag_container">
   <h1>HASHTAGS</h1>
   <div class="card" style="width: 50rem;">
@@ -31,7 +28,7 @@
             <h5 class="hashtags_card-text">#<%= hashtag.text %></h5>
         <% }) %>
       <% }) %>
-      <h5><%= message %></h5>
+      <p class="message"><%= message %></p>
     </div>
     </div>
   </div>

@@ -29,7 +29,7 @@ const alaska = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/alaska', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -55,7 +55,7 @@ const alienist = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/alienist', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -81,7 +81,7 @@ const defendingJacob = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back late...'
             res.render('shows/jacob', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -107,7 +107,7 @@ const madeforlove = (req, res) => {
          })
      })
          if (allHashtags.length === 0) {
-             const message = 'No hashtags, check back later'
+             const message = 'No hashtags, check back later...'
              res.render('shows/love', {myTweets: myTweets, message:message})
          } else {
              const message = ''
@@ -134,7 +134,7 @@ const blymanor = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/manor', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -160,7 +160,7 @@ const homeBeforeDark = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/dark', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -186,7 +186,7 @@ const jackRyan = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/ryan', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -212,7 +212,7 @@ const pTVS = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/studios', {myTweets: myTweets, message:message})
         } else {
             const message = ''
@@ -238,7 +238,7 @@ const reasonsWhy = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back later'
+            const message = 'No hashtags, check back later...'
             res.render('shows/why', {myTweets: myTweets, message:message})
         } else {
             const message = ''
