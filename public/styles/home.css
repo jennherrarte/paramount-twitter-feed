@@ -89,6 +89,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .cards_item {
@@ -117,6 +118,9 @@ img {
   letter-spacing: 1px;
   text-transform: capitalize;
   margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .card_text {

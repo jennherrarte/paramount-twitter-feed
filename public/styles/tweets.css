@@ -1,6 +1,11 @@
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+}
 .tweet_link {
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tweet_container {
@@ -29,7 +34,8 @@
 
 .hashtags_card-text {
     padding-left: 20px;
-    padding-right: 20px;  
+    padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #twitter_container {

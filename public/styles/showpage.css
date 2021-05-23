@@ -24,9 +24,17 @@
 }
 
 .showbio {
-    width: 80%
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
 }
 
+.title {
+    font-family: 'Archivo', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+}
 /*==================
  MEDIA QUERIES
  ==================*/

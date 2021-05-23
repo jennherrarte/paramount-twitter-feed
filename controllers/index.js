@@ -81,7 +81,7 @@ const defendingJacob = async (req, res) => {
         })
     })
         if (allHashtags.length === 0) {
-            const message = 'No hashtags, check back late...'
+            const message = 'No hashtags, check back later...'
             res.render('shows/jacob', {myTweets: myTweets, message:message})
         } else {
             const message = ''
