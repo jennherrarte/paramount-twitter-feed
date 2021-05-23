@@ -3,7 +3,7 @@ const app = express();
 require('dotenv').config()
 const twit = require('twit');
 const indexRouter = require('./routes/index-routes')
-const PORT = 5000; 
+let port = process.env.PORT;
 
 const T = new twit({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -29,9 +29,7 @@ app.use('/', indexRouter)
     })
 })
 
-app.listen(process.env.PORT || 5000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
-
-
-
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
