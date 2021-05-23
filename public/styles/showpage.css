@@ -1,18 +1,14 @@
-
-
 .biocontainer {
     display: flex;
     flex-direction: row-reverse;
 }
 
 .showbox {
-  display: flex;
-flex-direction: column;
-margin-left: 10px;
-align-items: center;
-margin-top: 30px;
-
-   
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 30px; 
+    align-items: center;
 }
 
 .socials {
@@ -31,19 +27,13 @@ margin-top: 30px;
     width: 80%
 }
 
-
 /*==================
  MEDIA QUERIES
  ==================*/
  @media (max-device-width: 375px) and (max-device-width : 812px) {
    
     .biocontainer {
-        
         flex-direction: column-reverse;
         
     }
-
-         
-      
-   
-     }
+}
