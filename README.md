@@ -34,3 +34,4 @@ Help me fix the problem as quickly as possible by following Mozilla's guidelines
 - Expanding media queries for more devices
 - Implement location for twitter users 
 - Implement more consistent styling across homepage and show pages
+- I would love to remake this App using Python so that I can scrape data like user sentiment, etc. 
