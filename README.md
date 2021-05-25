@@ -31,6 +31,7 @@ Help me fix the problem as quickly as possible by following Mozilla's guidelines
 
 ***
 # ☕ Stuff that needs work
+- The UI looks fine on Chrome but occasionally glitches on Safari
 - Expanding media queries for more devices
 - Implement location for twitter users 
 - Implement more consistent styling across homepage and show pages
