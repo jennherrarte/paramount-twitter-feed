@@ -1,4 +1,4 @@
-.twitterlogo{
+.twitterlogo { 
     width: 40px
 }
 
@@ -15,7 +15,7 @@
 
 .tweet_container {
     overflow:scroll;
-    height: 700px;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
