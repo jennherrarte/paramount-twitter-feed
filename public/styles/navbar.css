@@ -1,6 +1,8 @@
 .navImage {
     height: 40px;
     display: flex;
+
+    
 }
 
 .navbar-brand {
@@ -10,4 +12,11 @@
 .navbar-nav {
     font-family: 'Archivo', sans-serif;
 
+}
+
+
+@media only screen and (max-width: 992px){
+    .navImage {
+        display: none;
+    }
 }
