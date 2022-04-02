@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="icon" type="image/png" href="../../public/images/keyart/ptvslogo.png">
+  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap" rel="stylesheet">
     <title>Paramount Television Studios</title>
     
@@ -13,22 +26,80 @@
     <div class="top-container">
 </head>
 <body>
-    <!-- <div id="slider">
-        <figure>
-        <img src="../public/images/carousel/BLY.png" alt>
-        <img src="../public/images/carousel/13.png" alt>
-        <img src="../public/images/carousel/AOD.png" alt>
-        <img src="../public/images/carousel/HBD.png" alt>
-        <img src="../public/images/carousel/DJ.png" alt>
-        <img src="../public/images/carousel/MFL.png" alt>
-        <img src="../public/images/carousel/BLY.png" alt>
-        <img src="../public/images/carousel/LFA.png" alt>
-        <img src="../public/images/carousel/JR.png" alt>
-        </figure>
-    </div> -->
+  <video
+  id="my-video"
+  class="video-js vjs-16-9"
+  controls
+  preload="auto"
+  poster="MY_VIDEO_POSTER.jpg"
+  data-setup="{}"
+>
+  <source src="../public/video/ptvs-sizzle.mp4" type="video/mp4" />
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank"
+      >supports HTML5 video</a
+    >
+  </p>
+</video>
+
+<div class="header-text">
+<h1>PARAMOUNT TELEVISION STUDIOS</h1>
+<br>
+<br>
+<h1>ABOUT</h1>
+<p>Paramount Television Studios is a leading studio, developing and financing a wide range of cutting-edge and entertaining television content across all media platforms for distribution worldwide.</p>
+<br>
+<br>
+<h1>FEATURED SHOWS</h1>
+<p>Click below to see what the buzz is on Twitter.</p>
+</div>
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="../public/video/ptvs-sizzle.mp4" type="video/mp4" />
+</video> -->
+
+    <!-- Swiper -->
+  
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/Station-11.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/MFL.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/HBD.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/DJ.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/13RY.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/Bly.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/AOD.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/JR.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/LFA.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../public/images/keyart/PTVS.png">
+        </div>
+      </div>
+     <div class="swiper-button-next"></div> 
+      <div class="swiper-button-prev"></div>
+    </div>
 
     <div class="main">
-        <ul class="cards">
+        <!-- <ul class="cards">
             <li class="cards_item">
                 <div class="card">
                   <div class="card_image"><img src="../public/images/MFL.png"></div>
@@ -113,6 +184,54 @@
             </div>
           </li>
         </ul>
-      </div>
+      </div> -->
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetweenSlides: 25
+            },
+            400: {
+              slidesPerView: 2,
+              spaceBetweenSlides: 25
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 20
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 20
+            },
+            1240: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 20
+            }
+        }
+        });
+      </script>
+      <script>
+        var player = videojs('my-video', {
+          fluid: true,
+          fill: true,
+          autoplay: true,
+          
+        });
+      </script>
+      <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
 </body>
 </html>
+

@@ -6,7 +6,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
-    "swiper": "^7.3.2",
+    "swiper": "^7.4.1",
     "twit": "^2.2.11"
   },
   "scripts": {
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/JennHerrarte/ParamountTwitterFeed/issues"
   },
-  "homepage": "https://github.com/JennHerrarte/ParamountTwitterFeed#readme"
+  "homepage": "https://github.com/JennHerrarte/ParamountTwitterFeed#readme",
+  "devDependencies": {
+    "video.js": "^7.18.1"
+  }
 }

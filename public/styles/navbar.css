@@ -6,17 +6,34 @@
 }
 
 .navbar-brand {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    color: black !important;
+    /* font-family: 'Archivo', sans-serif; */
 }
 
-.navbar-nav {
+.nav-link {
     font-family: 'Archivo', sans-serif;
+    color: black !important;
 
 }
 
+.dropdown-item {
+    font-family: 'Archivo', sans-serif;
+    color: black !important;
+}
 
 @media only screen and (max-width: 992px){
     .navImage {
         display: none;
     }
 }
+
+.navbar {
+    background-color:white !important;
+}
+ 
+.navImage {
+    margin-right: 12px;
+    height: 50px;
+    width: auto;
+} 

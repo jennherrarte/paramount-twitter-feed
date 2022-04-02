@@ -1,11 +1,3 @@
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  40% { left: -105%; } 
-  60% { left: -213%; } 
-  85% { left: -320%; }
-}
-
 html,body
 {
     width: 100%;
@@ -17,27 +9,12 @@ html,body
 
   body {
      margin: 0; 
-     color: #272727;
      background-color: white;
      font-style: normal;
      font-weight: 400;
      letter-spacing: 0;
-     
+     background-color: #000a3c;
   } 
-  div#slider { 
-    display:flex;
-    flex-direction: row;
-    overflow: hidden; }
-  div#slider figure img { width: 700px; float: left; }
-  div#slider figure { 
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 30s slidy infinite; 
-  }
   
 *,
 *::before,
@@ -45,15 +22,28 @@ html,body
     box-sizing: border-box;
 }
 
+h1 {
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+p {
+  font-family: archivo;
+  font-size: 20px;
+}
+
+.header-text {
+  color: white;
+  align-content: center;
+  text-align: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 50px;
+}
+
 .main {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
 }
 
 img {
@@ -144,6 +134,44 @@ img {
   font-weight: 400;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 /*==================
  MEDIA QUERIES
  ==================*/
@@ -164,3 +192,19 @@ div#slider figure img { width: 150px; float: left; }
     width: 33.3333%;
   }
 } */
+
+.swiper-button-prev {
+  color: white;
+  font-weight: 700;
+}
+.swiper-button-next {
+  color: white;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 992px){
+  .header-text {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

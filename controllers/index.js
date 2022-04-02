@@ -246,6 +246,32 @@ const reasonsWhy = async (req, res) => {
     })
 }
 
+const station11 = async (req, res) => {
+    const allHashtags = []
+    T.get('search/tweets', {
+        q: 'Station 11 since:2020-01-01',
+        lang: 'en'
+        , count: 100,
+    }, function (err, data, response) {
+        const myTweets = data
+        const dataStatuses = data.statuses
+        dataStatuses.forEach((item)=>{
+        const hashtagsArray = item['entities'].hashtags
+        hashtagsArray.forEach((hashtag)=> {
+            const tag = hashtag.text
+            allHashtags.push(tag)
+        })
+    })
+        if (allHashtags.length === 0) {
+            const message = 'No hashtags, check back later...'
+            res.render('shows/station', {myTweets: myTweets, message:message})
+        } else {
+            const message = ''
+            res.render('shows/station', {myTweets: myTweets, message:message})
+        }
+    })
+}
+
 module.exports = {
     homePage,
     madeforlove,
@@ -256,5 +282,6 @@ module.exports = {
     defendingJacob,
     jackRyan,
     pTVS,
-    reasonsWhy
+    reasonsWhy,
+    station11
   };
