@@ -1,13 +1,42 @@
 .navImage {
-    height: 40px;
-    display: flex;
+  height: 40px;
+  display: flex;
 }
 
 .navbar-brand {
-    font-family: 'Archivo', sans-serif;
+  font-family: "Bebas Neue", cursive;
+  color: black !important;
+  /* font-family: 'Archivo', sans-serif; */
 }
 
-.navbar-nav {
-    font-family: 'Archivo', sans-serif;
+.nav-link {
+  font-family: "Archivo", sans-serif;
+  color: black !important;
+  font-size: 15px;
+}
 
+.dropdown-item {
+  font-family: "Archivo", sans-serif;
+  color: black !important;
+}
+
+.navbar {
+  background-color: white !important;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  z-index: 10;
+}
+
+.navImage {
+  margin-right: 12px;
+  height: 40px;
+  width: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .navImage {
+    display: none;
+  }
 }
