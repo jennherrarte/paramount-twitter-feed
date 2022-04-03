@@ -1,118 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap" rel="stylesheet">
-    <title>Paramount Television Studios</title>
-    
-    <%- include('./partials/_nav_bar') %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" href="../../public/images/keyart/ptvslogo.png">
+  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap" rel="stylesheet">
+  <title>Paramount Television Studios</title>
 
-    <link rel="stylesheet" href=".././public/styles/home.css">
-    <div class="top-container">
+  <%- include('./partials/_nav_bar') %>
+
+  <link rel="stylesheet" href=".././public/styles/home.css">
+  <div class="top-container">
 </head>
-<body>
-    <div id="slider">
-        <figure>
-        <img src="../public/images/carousel/BLY.png" alt>
-        <img src="../public/images/carousel/13.png" alt>
-        <img src="../public/images/carousel/AOD.png" alt>
-        <img src="../public/images/carousel/HBD.png" alt>
-        <img src="../public/images/carousel/DJ.png" alt>
-        <img src="../public/images/carousel/MFL.png" alt>
-        <img src="../public/images/carousel/BLY.png" alt>
-        <img src="../public/images/carousel/LFA.png" alt>
-        <img src="../public/images/carousel/JR.png" alt>
-        </figure>
-    </div>
 
-    <div class="main">
-        <ul class="cards">
-            <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="../public/images/MFL.png"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Made For Love</h2>
-                    <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/madeforlove">View</a></button>
-                  </div>
-                </div>
-              </li>
-            <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="../public/images/keyart/HBD.png"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Home Before Dark</h2>
-                    <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/homebeforedark">View</a></button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="../public/images/keyart/DJ.png"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Defending Jacob</h2>
-                    <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/defendingjacob">View</a></button>
-                  </div>
-                </div>
-              </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/13RY.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">13 Reasons Why</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/13reasonswhy">View</a></button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/Bly.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">The Haunting of Bly Manor</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/thehaunting">View</a></button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/AOD.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">The Alienist</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/thealienist">View</a></button>
-              </div>
-            </div>
-          </li>
-        
-         
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/JR.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">Tom Clancy's Jack Ryan</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/jackryan">View</a></button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/LFA.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">Looking for Alaska</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/lookingforalaska">View</a></button>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="../public/images/keyart/PTVS.png"></div>
-              <div class="card_content">
-                <h2 class="card_title">Paramount Television Studios</h2>
-                <button class="btn card_btn"><a class="dropdown-item" target="_blank" href="/tweets/paramounttelevisionstudios">View</a></button>
-              </div>
-            </div>
-          </li>
-        </ul>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="myVideo">
+      <source src="../public/video/ptvs-sizzle.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="main">
+    <section>
+      <div class="header-text animate fadeInLeft three">
+        <h1>PARAMOUNT TELEVISION STUDIOS</h1>
+        <br>
+        <br>
+        <h1>ABOUT</h1>
+        <p>Paramount Television Studios is a leading studio, developing and financing a wide range of cutting-edge and
+          entertaining television content across all media platforms for distribution worldwide.</p>
+        <br>
+        <br>
+        <h1>FEATURED SHOWS</h1>
+        <p>Click below to see what the buzz is on Twitter.</p>
       </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/station11">
+              <img src="../public/images/keyart/Station-11.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/madeforlove">
+              <img src="../public/images/MFL.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/homebeforedark">
+              <img src="../public/images/keyart/HBD.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/defendingjacob">
+              <img src="../public/images/keyart/DJ.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/13reasonswhy">
+              <img src="../public/images/keyart/13RY.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/thehaunting">
+              <img src="../public/images/keyart/Bly.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/thealienist">
+              <img src="../public/images/keyart/AOD.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/jackryan">
+              <img src="../public/images/keyart/JR.png">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="/tweets/lookingforalaska">
+              <img src="../public/images/keyart/LFA.png">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 25
+          },
+          400: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 25
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 20
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 20
+          },
+          1240: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 20
+          }
+        }
+      });
+    </script>
 </body>
+
 </html>
