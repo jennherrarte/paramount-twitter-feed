@@ -13,7 +13,7 @@ Deployed Link: https://ptvstwitterfeed.herokuapp.com/
     -  [TWITTER API](https://developer.twitter.com/en/docs) 
 ***
 # Team:
--  UI / UX, Front-End Enginner, Back-End Enginner : Jennifer Herrarte.
+-  UI / UX, Front-End Enginner, Back-End Enginner : Jennifer Herrarte
 
 ***
 # Errors and bugs
