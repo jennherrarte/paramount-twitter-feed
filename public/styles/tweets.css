@@ -43,6 +43,10 @@
   margin-bottom: 50px;
   min-width: 100%;
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1000px;
 }
 
 .hashtags_card-text,
@@ -61,7 +65,7 @@
 }
 
 .tweet {
-  display: flex;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 992px) {
