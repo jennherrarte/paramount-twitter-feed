@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">     
-        <title>Paramount Television Studios</title>
-        <%- include('../partials/_nav_bar') %>
-        <link rel="stylesheet" href="../../public/styles/showpage.css">
-    </head>
-    <body>
-        <div class="biocontainer">
-        <%- include('../partials/_tweets_hashtags') %>
-            <div class="showbox">
-                <h1 class="title">Looking for Alaska</h1>
-                <h3 class="subtitle">Join the conversation</h3>
-                <div container="socials">
-                    <a href="https://twitter.com/intent/tweet?button_hashtag=LookingforAlaska&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <img class="showimage" src="../../public/images/showpage/LFASHOW.jpeg" alt>
-                <p class="showbio">Looking For Alaska is an 8-episode limited series based on the John Green novel of the same name. It centers teenager Miles “Pudge” Halter (Charlie Plummer), as he enrolls in boarding school to try to gain a deeper perspective on life. He falls in love with Alaska Young (Kristine Froseth), and finds a group of loyal friends. But after an unexpected tragedy, Miles and his close friends attempt to make sense of what they’ve been through.</p>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../public/images/keyart/ptvslogo.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramount Television Studios</title>
+    <%- include('../partials/_nav_bar') %>
+    <link rel="stylesheet" href="../../public/styles/showpage.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">Looking for Alaska</h1>
+      <p class="subtitle">Join the conversation</p>
+      <div>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=LookingforAlaska&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LookingforAlaska</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <a
+          href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw"
+          class="twitter-mention-button"
+          data-show-count="false"
+          >Tweet to @paramounttvs</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <img class="showimage" src="../../public/images/showpage/LFASHOW.jpeg" alt>
+
+      <div class="showbio-container">
+        <h2>About the series</h2>
+        <p class="showbio">
+            Looking For Alaska is an 8-episode limited series based on the John Green novel of the same name. It centers teenager Miles “Pudge” Halter (Charlie Plummer), as he enrolls in boarding school to try to gain a deeper perspective on life. He falls in love with Alaska Young (Kristine Froseth), and finds a group of loyal friends. But after an unexpected tragedy, Miles and his close friends attempt to make sense of what they’ve been through.
+        </p>
+      </div>
+      <%- include('../partials/_tweets_hashtags') %>
+    </div>
+  </body>
 </html>
+
+
 
