@@ -4,7 +4,7 @@ Deployed Link: https://ptvstwitterfeed.herokuapp.com/
 ***
 ### The Paramount Television Studios twitter feed is an internal tool for executives and social media teams, which allows users to get the latest tweets and hashtags featuring Paramount Television Studios titles. The application is built using JavaScript, Express, Bootstrap, Twitter API, and deployed on Heroku. 
 ***
-# Technologies Used:
+# Tech Stack:
 -  Front-End:
     -  In Use: EJs, CSS, and Bootstrap.
 -  Back-End:
