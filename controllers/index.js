@@ -67,7 +67,7 @@ const alienist = async (req, res) => {
 const defendingJacob = async (req, res) => {
     const allHashtags = []
     T.get('search/tweets', {
-        q: 'Defending Jacob OR Chris Evans since:2020-01-01',
+        q: 'Defending Jacob OR Chris Evans since:2021-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -145,7 +145,7 @@ const blymanor = async (req, res) => {
 const homeBeforeDark = async (req, res) => {
     const allHashtags = []
     T.get('search/tweets', {
-        q: 'Home Before Dark since:2020-01-01',
+        q: 'Home Before Dark since:2021-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
@@ -223,7 +223,7 @@ const pTVS = async (req, res) => {
 const reasonsWhy = async (req, res) => {
     const allHashtags = []
     T.get('search/tweets', {
-        q: '13 Reasons Why since:2020-01-01',
+        q: '13 Reasons Why since:2021-01-01',
         lang: 'en'
         , count: 100,
     }, function (err, data, response) {
