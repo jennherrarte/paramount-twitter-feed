@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">     
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paramount Television Studios</title>
-        <%- include('../partials/_nav_bar') %>
-        <link rel="stylesheet" href="../../public/styles/showpage.css">
-    </head>
-    <body>
-        <div class="biocontainer">
-        <%- include('../partials/_tweets_hashtags') %>
-            <div class="showbox">
-                <h1 class="title">Home Before Dark</h1>
-                <h3 class="subtitle">Join the conversation</h3>
-                <div container="socials">
-                  <a href="https://twitter.com/intent/tweet?button_hashtag=HomeBeforeDark&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  <a href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @paramounttvs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <img class="showimage" src="../../public/images/showpage/HBDSHOW.jpg" alt>
-                <p class="showbio">“Home Before Dark” is a dramatic mystery series inspired by the reporting of a young investigative journalist, Hilde Lysiak. Directed and executive produced by Jon M. Chu, the series follows a young girl named Hilde (played by Brooklynn Prince) who moves from the city of Brooklyn to the small lakeside town her father left behind. While there, her dogged pursuit of the truth leads her to unearth a cold case that everyone in town, including her own father, tried hard to bury.</p>
-            </div>
-        </div>
-    </body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../public/images/keyart/ptvslogo.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramount Television Studios</title>
+    <%- include('../partials/_nav_bar') %>
+    <link rel="stylesheet" href="../../public/styles/showpage.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">Home Before Dark</h1>
+      <p class="subtitle">Join the conversation</p>
+      <div>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=HomeBeforeDark&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #HomeBeforeDark</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <a
+          href="https://twitter.com/intent/tweet?screen_name=paramounttvs&ref_src=twsrc%5Etfw"
+          class="twitter-mention-button"
+          data-show-count="false"
+          >Tweet to @paramounttvs</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <img class="showimage" src="../../public/images/showpage/HBDSHOW.jpg" alt>
 
+      <div class="showbio-container">
+        <h2>About the series</h2>
+        <p class="showbio">
+            “Home Before Dark” is a dramatic mystery series inspired by the reporting of a young investigative journalist, Hilde Lysiak. Directed and executive produced by Jon M. Chu, the series follows a young girl named Hilde (played by Brooklynn Prince) who moves from the city of Brooklyn to the small lakeside town her father left behind. While there, her dogged pursuit of the truth leads her to unearth a cold case that everyone in town, including her own father, tried hard to bury.
+        </p>
+      </div>
+      <%- include('../partials/_tweets_hashtags') %>
+    </div>
+  </body>
+</html>
