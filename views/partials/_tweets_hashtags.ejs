@@ -1,6 +1,6 @@
-
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">          
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../public/styles/tweets.css">
 
 <div id="twitter_container">
@@ -10,8 +10,8 @@
     <p>No Tweets, check back later!</p>
   <% } %> 
     <% myTweets.statuses.forEach( tweets => { %>
-     <div class="card" style="width: 50rem;">
-       <div class="card-body">
+     <div class="tweet">
+       <div>
          <a class="tweet_link" target="_blank" href="https://twitter.com/<%= tweets.user.screen_name %>/status/<%= tweets.id_str %>"><%= tweets.text %></a>
          <p class="usernames">Tweeted by @<%= tweets.user.screen_name %></p>
        </div>
@@ -21,8 +21,8 @@
 
 <div class="hashtag_container">
   <h1 class="subtitle">Hashtags <img class="twitterlogo" src="../../public/images/showpage/twitterlogo.png" alt></h1>
-  <div class="card" style="width: 50rem;">
-    <div class="hashtags_card-body">
+  <div class="card">
+    <div class="tweet">
       <% myTweets.statuses.forEach( status => { %>
           <% status.entities.hashtags.forEach( hashtag => { %>
             <h5 class="hashtags_card-text">#<%= hashtag.text %></h5>
@@ -33,6 +33,7 @@
     </div>
   </div>
 </div>
+
 
 
 
