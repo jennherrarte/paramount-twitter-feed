@@ -24,8 +24,7 @@
   background-color: white !important;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
-  position: fixed;
+  padding-bottom: 10px
   z-index: 10;
 }
 
