@@ -1,4 +1,7 @@
-# Paramount Television Studios Twitter Feed 🎬
+
+![4](https://github.com/jennherrarte/paramount-twitter-feed/assets/36706323/b7fe993e-88fe-4e7f-a378-1b8251bab974)
+
+
 
 Deployed Link: https://ptvstwitterfeed.herokuapp.com/
 ***
