@@ -14,7 +14,7 @@
 
 
 ***
-# 🖥️ Technologies Used:
+# 🖥️ Technologies Used
 -  Front-End:
     -  In Use: EJs, CSS, and Bootstrap.
 -  Back-End:
@@ -22,7 +22,7 @@
  - Data Used:
     -  [TWITTER API](https://developer.twitter.com/en/docs) 
 ***
-# ✅ Team:
+# ✅ Team
 -  UI / UX, Front-End Enginner, Back-End Enginner : Jennifer Herrarte
 ***
 
