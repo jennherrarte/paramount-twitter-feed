@@ -2,12 +2,17 @@
 ![4](https://github.com/jennherrarte/paramount-twitter-feed/assets/36706323/b7fe993e-88fe-4e7f-a378-1b8251bab974)
 
 
+***
+### The Paramount Television Studios Twitter Feed 🎥 was an internal tool for executives and social media teams, which allowed users to get the latest tweets and hashtags featuring Paramount Television Studios titles. The application was built using JavaScript, Express, Bootstrap, Twitter API, and deployed on Heroku. Please be aware that this project is no longer actively maintained, as I am no longer affiliated with Paramount and the API has undergone updates following Twitter's transition to X.
 
-Deployed Link: https://ptvstwitterfeed.herokuapp.com/
+# 🤔 What I would do differently
+- I would implement a framework or library, like React or Vue, to create a library of reusable components and manage state.
+- I would use Sass to implement mixins and functions.
+- I would add a data point for the location and region of Twitter users and relevant tweets. 
+
+
 ***
-### The Paramount Television Studios twitter feed is an internal tool for executives and social media teams, which allows users to get the latest tweets and hashtags featuring Paramount Television Studios titles. The application is built using JavaScript, Express, Bootstrap, Twitter API, and deployed on Heroku. 
-***
-# Tech Stack:
+# 🖥️ Technologies Used:
 -  Front-End:
     -  In Use: EJs, CSS, and Bootstrap.
 -  Back-End:
@@ -17,18 +22,7 @@ Deployed Link: https://ptvstwitterfeed.herokuapp.com/
 ***
 # Team:
 -  UI / UX, Front-End Enginner, Back-End Enginner : Jennifer Herrarte
-
 ***
-# Errors and bugs
-If something is not behaving intuitively, it is a bug and should be reported. Report it here by creating an issue: https://github.com/JennHerrarte/ParamountTwitterFeed/issues.
 
-***
-# ☕ Working on implementing: 
-- a data point for location and region of twitter users and relevant tweets 
 
-***
-# Installation: 
-1. git clone https://github.com/jennherrarte/paramount-twitter-feed.git
-2. cd paramount-twitter-feed
-3. npm i 
-4. npm run start
+
