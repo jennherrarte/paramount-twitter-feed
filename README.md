@@ -3,7 +3,9 @@
 
 
 ***
-### The Paramount Television Studios Twitter Feed 🎥 was an internal tool for executives and social media teams, which allowed users to get the latest tweets and hashtags featuring Paramount Television Studios titles. The application was built using JavaScript, Express, Bootstrap, Twitter API, and deployed on Heroku. Please be aware that this project is no longer actively maintained, as I am no longer affiliated with Paramount and the API has undergone updates following Twitter's transition to X.
+### 🎥 The Paramount Television Studios Twitter Feed was an internal tool for executives and social media teams, which allowed users to get the latest tweets and hashtags featuring Paramount Television Studios titles. The application was built using JavaScript, Express, Bootstrap, Twitter API, and deployed on Heroku. 
+
+***Please be aware that this project is no longer actively maintained, as I am no longer affiliated with Paramount and the API has undergone updates following Twitter's transition to X.***
 
 # 🤔 What I would do differently
 - I would implement a framework or library, like React or Vue, to create a library of reusable components and manage state.
@@ -20,7 +22,7 @@
  - Data Used:
     -  [TWITTER API](https://developer.twitter.com/en/docs) 
 ***
-# Team:
+# ✅ Team:
 -  UI / UX, Front-End Enginner, Back-End Enginner : Jennifer Herrarte
 ***
 
